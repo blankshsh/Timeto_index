@@ -1,0 +1,297 @@
+.wrp {
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+.header_hover {
+    background-color: #42e3fd;
+    color: #fff;
+}
+
+.header_color {
+    background-color: #42e3fd;
+}
+
+header {
+    position: fixed;
+    z-index: 9;
+    background: url("../img/header_bg.png") repeat-x;
+    .headerwrp {
+        width: 800px;
+        height: 79px;
+        margin: 0 auto;
+        position: relative;
+        .logo {
+            width: 62px;
+            height: 62px;
+            display: block;
+            float: left;
+            margin: 9px 19px 0 35px;
+            i {
+                height: 62px;
+                width: 62px;
+                display: block;
+                background: url("../img/icon.png") no-repeat;
+                background-position: -150px 0;
+            }
+        }
+        .link {
+            li {
+                float: left;
+                margin-left: 35px;
+                width: 70px;
+                height: 79px;
+                a {
+                    width: 70px;
+                    height: 79px;
+                    display: block;
+                    text-align: center;
+                    line-height: 79px;
+                    color: #000;
+                    &:hover {
+                        .header_hover
+                    }
+                }
+            }
+        }
+        .moremsg {
+            .download {
+                float: left;
+                width: 70px;
+                cursor: pointer;
+                &:hover {
+                    .header_hover;
+                    .downloadicon {
+                        display: block;
+                    }
+                }
+                span {
+                    display: block;
+                    line-height: 79px;
+                    text-align: center;
+                    color: #000;
+                }
+                .downloadicon {
+                    position: absolute;
+                    .header_color;
+                    width: 165px;
+                    height: 115px;
+                    display: none;
+                    i {
+                        display: block;
+                    }
+                    .link {
+                        width: 96px;
+                        height: 96px;
+                        background: url('../img/icon.png') no-repeat;
+                        background-size: 160px 100px;
+                        position: absolute;
+                        left: 20px;
+                        top: 10px;
+                    }
+                    .android {
+                        width: 22px;
+                        height: 26px;
+                        background: url('../img/icon.png') no-repeat;
+                        background-position: -150px -75px;
+                        position: absolute;
+                        top: 18px;
+                        right: 10px;
+                    }
+                    .iphone {
+                        width: 22px;
+                        height: 28px;
+                        background: url('../img/icon.png') no-repeat;
+                        background-position: -150px -110px;
+                        position: absolute;
+                        bottom: 15px;
+                        right: 10px;
+                    }
+                }
+            }
+            .morefont-btn {
+                float: left;
+                width: 70px;
+                cursor: pointer;
+                height: 79px;
+                overflow: hidden;
+
+                &:hover {
+                    .morefont-info {
+                        display: block;
+                    }
+                }
+                span {
+                    width: 70px;
+                    height: 79px;
+                    display: block;
+                    text-align: center;
+                    line-height: 79px;
+                    color: #000;
+                }
+                .morefont-info {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 70px;
+                    height: 168px;
+                    display: none;
+                    .header_hover;
+                    z-index: 99;
+                    ul {
+                    	margin-top: 15px;
+                        li {
+                            width: 70px;
+                            height: 50px;
+                            margin: 0;
+                            a {
+                                span {
+                                    width: 70px;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page1 {
+    height: 750px;
+    background: #f0f0f0 url("../img/page1_big.jpg") no-repeat 50% 50%;
+    .page1wrp {
+        margin: 0 auto;
+        width: 800px;
+        position: relative;
+        .info {
+            position: absolute;
+            top: 260px;
+            left: 45px;
+            width: 370px;
+            height: 270px;
+            h1 {
+                font-size: 36px;
+                color: #1e1e1e;
+                text-align: center;
+            }
+            h2 {
+                font-size: 16px;
+                color: #1e1e1e;
+                font-weight: normal;
+                margin-top: 36px;
+            }
+            .download-btn {
+                margin: 66px auto 0 auto;
+                width: 280px;
+                height: 54px;
+                color: #fff;
+                display: block;
+                border-radius: 8px;
+                background-color: #42e3fd;
+                box-shadow: 0 2px 5px 1px rgba(33, 33, 33, .2);
+                line-height: 54px;
+                text-align: center;
+                font-size: 18px;
+                cursor: pointer;
+                user-select:none;
+                a {
+                    color: #fff;
+                }
+            }
+            .version {
+                font-size: 14px;
+                color: #bebebe;
+                margin-top: 20px;
+                text-align: center;
+                display: block;
+            }
+        }
+        img {
+            position: absolute;
+            right: 50px;
+            top: 125px;
+        }
+    }
+}
+
+.page2 {
+    height: 750px;
+    background: #f0f0f0 url("../img/page2_big.jpg") no-repeat 50% 50%;
+    .page2wrp {
+        margin: 0 auto;
+        width: 800px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 180px;
+            left: 40px;
+        }
+        .info {
+            position: absolute;
+            width: 470px;
+            height: 100px;
+            top: 254px;
+            right: 30px;
+            h1 {
+                font-size: 36px;
+                color: #e8e8e8;
+                text-align: center;
+            }
+            h2 {
+                font-size: 16px;
+                color: #e8e8e8;
+                font-weight: normal;
+                margin-top: 36px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.page3 {
+    height: 800px;
+    background: #f0f0f0 url("../img/page3_big.jpg") no-repeat 50% 50%;
+    .page3wrp {
+        margin: 0 auto;
+        width: 800px;
+        position: relative;
+        .info {
+            position: absolute;
+            top: 286px;
+            left: 24px;
+            h1 {
+                font-size: 36px;
+                color: #e8e8e8;
+                text-align: center;
+            }
+            h2 {
+                font-size: 16px;
+                color: #e8e8e8;
+                font-weight: normal;
+                margin-top: 36px;
+                text-align: center;
+            }
+        }
+        img {
+            position: absolute;
+            right: 30px;
+            top: 170px;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    margin-top: -30px;
+    span {
+        text-align: center;
+        display: block;
+        font-size: 14px;
+        color: #373737;
+    }
+}
