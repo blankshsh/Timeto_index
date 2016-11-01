@@ -1,7 +1,7 @@
 .header_hover {
     background-color: #42e3fd;
     color: #fff;
-    box-shadow: 0 2px 7px rgba(11,178,204,.52);
+    box-shadow: 0 2px 7px rgba(11, 178, 204, .52);
 }
 
 .header_color {
@@ -45,7 +45,8 @@ header {
                     line-height: 79px;
                     color: #000;
                     &:hover {
-                        .header_hover
+                        .header_hover;
+                        transition: all .3s ease-out;
                     }
                 }
             }
@@ -57,6 +58,9 @@ header {
                 cursor: pointer;
                 &:hover {
                     .header_hover;
+                    span {
+                        color: #fff;
+                    }
                     .downloadicon {
                         display: block;
                     }
@@ -68,7 +72,7 @@ header {
                     color: #000;
                 }
                 .downloadicon {
-                    box-shadow: 0 2px 7px rgba(11,178,204,.52);
+                    box-shadow: 0 2px 7px rgba(11, 178, 204, .52);
                     position: absolute;
                     .header_color;
                     width: 165px;
@@ -204,19 +208,26 @@ header {
         left: 130px;
         top: 60px;
         width: 143px;
-        i {
-            width: 143px;
-            height: 143px;
-            background: url('../img/icon.png') no-repeat;
-            display: block;
-        }
-        span {
-            text-align: center;
-            color: #226873;
-            font-size: 18px;
-            display: block;
-            margin-top: 16px;
-            margin-bottom: 50px;
+        .clicklink {
+            .linkicon {
+                cursor: pointer;
+                width: 143px;
+                height: 143px;
+                background: url('../img/icon.png') no-repeat;
+                display: block;
+                &:hover {
+                    // transform:scale(1.1,1.1);
+                    // transition: all .3s ease-out;
+                }
+            }
+            span {
+                text-align: center;
+                color: #226873;
+                font-size: 18px;
+                display: block;
+                margin-top: 16px;
+                margin-bottom: 50px;
+            }
         }
     }
     .address {
@@ -228,5 +239,31 @@ header {
         position: absolute;
         left: 320px;
         top:90px;
+    }
+}
+
+.linkinfo {
+    cursor: pointer;
+    display: none;
+    .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.7;
+    }
+    i {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        width: 143px;
+        height: 143px;
+        background: url('../img/icon.png') no-repeat;
+        display: block;
+        transform: translate(-50%, -50%) scale(1.5, 1.5);
     }
 }

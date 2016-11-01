@@ -50,7 +50,8 @@ header {
                     line-height: 79px;
                     color: #000;
                     &:hover {
-                        .header_hover
+                        .header_hover;
+                        transition: all .3s ease-out;
                     }
                 }
             }
@@ -62,6 +63,9 @@ header {
                 cursor: pointer;
                 &:hover {
                     .header_hover;
+                    span{
+                        color:#fff;
+                    }
                     .downloadicon {
                         display: block;
                     }
@@ -194,12 +198,18 @@ header {
                 display: block;
                 border-radius: 8px;
                 background-color: #42e3fd;
+                //background-color: #42e3fd;
                 box-shadow: 0 2px 5px 1px rgba(33, 33, 33, .2);
                 line-height: 54px;
                 text-align: center;
                 font-size: 18px;
                 cursor: pointer;
                 user-select: none;
+                &:hover{
+                    //background-color:#02aeb4;
+                    //background-color:#79bdd2;
+                    background-color:#00d7fa;
+                }
                 a {
                     color: #fff;
                 }
@@ -315,5 +325,31 @@ footer {
         display: block;
         font-size: 14px;
         color: #373737;
+    }
+}
+
+.linkinfo {
+    cursor: pointer;
+    display: none;
+    .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.7;
+    }
+    i {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        width: 143px;
+        height: 143px;
+        background: url('../img/icon.png') no-repeat;
+        display: block;
+        transform: translate(-50%, -50%) scale(1.5, 1.5);
     }
 }
